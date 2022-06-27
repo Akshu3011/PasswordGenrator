@@ -26,21 +26,25 @@ function generatePassword()
   let specials;
   let miniumCondition=false;
 
+  //prompt for valid password length (8-128 char)
 do{
   passwordLength =Number(window.prompt("How many characters would you like your password to contain?"));
 
   if(passwordLength < 8 || passwordLength > 128)
   {
-    window.alert("Pasword length should be of length 8-128 chracters");
+    window.alert("Pasword characters should be of 8-128 length");
   }
+
 }while(passwordLength < 8 || passwordLength >128);
 
+//promp for character type selection
 do{
   window.confirm("Click Ok to confirm including Special characters") ? specials=true : specials=false;
   window.confirm("Click Ok to confirm including Lowercase characters") ? lowercase=true : lowercase=false;
   window.confirm("Click Ok to confirm including Uppercase characters") ? uppercase=true : uppercase=false;
   window.confirm("Click Ok to confirm including Numeric characters") ? numeric=true : numeric=false;
 
+  //condition for valid password
   if(!specials && !lowercase && !uppercase && !numeric)
   {
     window.alert("Must select at least one character type");
@@ -67,7 +71,8 @@ for(var i=0;i<passwordLength;i++){
     password+=numerics.charAt(Math.floor(Math.random()*numerics.length));
 }
 password = password.substring(0,passwordLength);
-            
+
+//returning the generated password
   return password;
 }
 
