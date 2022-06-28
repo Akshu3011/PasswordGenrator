@@ -1,11 +1,6 @@
-# 03 JavaScript: Password Generator
+
 # PasswordGenrator
 Password generator with user prompted password criteria
-## Your Task
-
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
-
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
 
 ## User Story
 
@@ -35,67 +30,45 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-## Mock-Up
 
-The following image shows the web application's appearance and functionality:
+## Description
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+The password generator application will collect the user preference to randomly generate the strong password.
+The Password length can be of 8-128 characters with a combination of at least one of the character types from Lowercase characters, Uppercase characters, Numerics and Special Characters.
 
-## Grading Requirements
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## Features
 
-This Challenge is graded based on the following criteria: 
+Generates a random password as per users preference selection. Relative alerts are displayed for invalid inputs.
+The password length can vary beween 8-128 characters if user inputs invalid characters or unacceptable length, then user is alerted with the correct message to input the valid length for password.
+User needs to select at least one of the character types to include in their password. The character types that can be included in the password are Lowercase characters, Uppercase characters, Numerics and Special Characters.
+The password generator will randomly generate the secured password with the length provided by user and the combination character types selected by the user.
 
-### Technical Acceptance Criteria: 40%
+## Installation
 
-* Satisfies all of the preceding acceptance criteria.
+Visit this <a href="https://akshu3011.github.io/PasswordGenrator/"> page</a> to access the password generator application.
 
-### Deployment: 32%
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2001.png)
 
-* Application deployed at live URL.
+## Screenshots 
+Here are some tests to verify the Password Generator:
 
-* Application loads with no errors.
+1. When user inputs invalid length
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2003.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2004.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2005.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2006.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2007.png)
 
-* Application GitHub URL submitted.
+2. When user provides valid inputs for password generation
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2008.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2009.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2010.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2011.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2012.png)
+![Here are some of the working snippets](./Assets/Screenshots/PasswordGenerator%2013.png)
 
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Credits
+<li>Akshata Kumbhar, creator</li>
+<li>W3Schools, reference for the JS help</li>
+<li>List of password special characters, (https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation. </li>
