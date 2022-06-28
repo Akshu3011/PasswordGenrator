@@ -1,23 +1,15 @@
 // Assignment Code
-/*1. how many characters would you like your password to contain?
-ok cancel   --> min 8 constrain-max 128
-2. alert or confirm --> click ok to confirm including special characters
-ok cancel
-3.click ok to confirm including numeric characters
-4.Click ok to confirm lowercase characters
-5.Click ok to confirm uppercase characters
 
-at least one character specification---> Must select at least one char type */
 function generatePassword()
 {
-  //specifying all the character types for password
+  //TODO: specifying all the character types for password
 
   const lowercaseAlpha="abdefghijklmnopqrstuvwxyz";
   const uppercaseAlpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const numerics="1234567890";
   const specialCharacter="!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
-  //collecting the password criteria from user
+  //TODO: collecting the password criteria from user
 
   let passwordLength;
   let lowercase;
@@ -26,7 +18,7 @@ function generatePassword()
   let specials;
   let miniumCondition=false;
 
-  //prompt for valid password length (8-128 char)
+  //TODO: prompt for valid password length (8-128 char)
 do{
   passwordLength =Number(window.prompt("How many characters would you like your password to contain?"));
 
@@ -37,14 +29,14 @@ do{
 
 }while(passwordLength < 8 || passwordLength >128);
 
-//promp for character type selection
+//TODO: prompt for character type selection
 do{
   window.confirm("Click Ok to confirm including Special characters") ? specials=true : specials=false;
   window.confirm("Click Ok to confirm including Lowercase characters") ? lowercase=true : lowercase=false;
   window.confirm("Click Ok to confirm including Uppercase characters") ? uppercase=true : uppercase=false;
   window.confirm("Click Ok to confirm including Numeric characters") ? numeric=true : numeric=false;
 
-  //condition for valid password
+  //TODO: condition for valid password
   if(!specials && !lowercase && !uppercase && !numeric)
   {
     window.alert("Must select at least one character type");
@@ -58,7 +50,7 @@ do{
 }while(!miniumCondition);
 
 
-//buildig the pasword on the basis of user input
+//TODO: building the password on the basis of user input
 let password="";
 for(var i=0;i<passwordLength;i++){
   if(lowercase)
@@ -72,7 +64,7 @@ for(var i=0;i<passwordLength;i++){
 }
 password = password.substring(0,passwordLength);
 
-//returning the generated password
+//TODO: returning the generated password
   return password;
 }
 
